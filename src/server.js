@@ -14,9 +14,9 @@ app.set('views', './src/views');
 route(app);
 
 app.get('/', (req, res) => {
-  res.render('home');
+      res.render('home');
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+			app.listen(3000, () => {
+  				console.log('Server is running on port 3000');
 });
