@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "prepare": "husky"
+    "prepare": "lint-staged"
   },
   "lint-staged": {
     "src/**/*.{js, hbs, json, scss}": [
