@@ -1,7 +1,14 @@
+import Courses from '../models/Courses.js';
+
 class SiteController {
   // [GET] /news
-  home(req, res) {
-    res.render('home');
+  async home(req, res) {
+    try {
+      const courses = await Courses.find({});
+      res.json(courses);
+    } catch (err) {
+      console.error(err);
+    }
   }
 }
 
